@@ -1,1 +1,37 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="theme-color" content="#1b2340">
+  <title>ネットまもりクエスト 〜ネットのわなを のりこえろ！〜</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="app">
+    <!-- ステータスバー（ゲーム中に表示） -->
+    <header id="topbar" class="topbar hidden">
+      <div class="tb-left">
+        <span id="tbAvatar" class="tb-avatar"></span>
+        <span class="tb-text">
+          <span id="tbName" class="tb-name"></span>
+          <span id="tbLevel" class="tb-level"></span>
+        </span>
+      </div>
+      <div id="tbHp" class="tb-hp" aria-label="ハート"></div>
+      <div class="tb-right">
+        <span id="tbExp" class="tb-exp"></span>
+        <button class="icon-btn" data-act="toggleSpeak" id="btnSpeak" aria-label="よみあげ きりかえ">🔇</button>
+        <button class="icon-btn" data-act="toggleBig" aria-label="もじの おおきさ">あA</button>
+        <button class="icon-btn" data-act="goMap" aria-label="マップへ">🗺️</button>
+      </div>
+    </header>
 
+    <!-- 画面表示エリア -->
+    <main id="screen" class="screen"></main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
